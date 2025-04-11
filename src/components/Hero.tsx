@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, MessageSquare, Instagram } from 'lucide-react';
 
@@ -15,7 +14,7 @@ const Hero = () => {
         <div className="mb-8 text-center">
           <div className="flex justify-center mb-4">
             <img 
-              src="/lovable-uploads/22766972-9857-4fe8-a9c7-9c4d67940397.png" 
+              src="/assets/Screenshot_2025-03-08_011347-removebg-preview.png" 
               alt="KS Design Logo" 
               className="h-16 md:h-20"
             />
