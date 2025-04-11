@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { Phone, MessageCircle, Instagram } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Phone, MessageSquare, Instagram } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -22,62 +21,56 @@ const Hero = () => {
             />
           </div>
           <p className="text-lg text-gray-800 max-w-xl mx-auto mb-8">
-            Interior Design Excellence
+            Samkit Shah
           </p>
         </div>
         
         <div className="grid grid-cols-1 gap-4 max-w-md mx-auto">
           {/* Phone Call */}
-          <Card className="overflow-hidden border-none shadow-md bg-white/90">
-            <CardContent className="p-4 flex flex-col items-center">
-              <div className="w-10 h-10 rounded-full bg-ksdesign-dark/10 flex items-center justify-center mb-2">
-                <Phone size={20} className="text-ksdesign-dark" />
-              </div>
-              <h3 className="text-md font-semibold mb-2 text-ksdesign-dark">Call Us</h3>
-              <a 
-                href="tel:+918735975757" 
-                className="inline-flex items-center justify-center px-3 py-1 rounded-lg bg-ksdesign-dark text-white font-medium hover:bg-ksdesign-dark/90 transition-colors duration-300"
-              >
-                +91 87359 75757
-              </a>
-            </CardContent>
-          </Card>
+          <a 
+            href="tel:+918735975757" 
+            className="bg-white rounded-lg shadow-md p-4 flex items-center gap-4 hover:shadow-lg transition-shadow"
+          >
+            <div className="w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center">
+              <Phone size={20} className="text-yellow-500" />
+            </div>
+            <div className="flex-1">
+              <div className="text-sm text-gray-500">Call us</div>
+              <div className="font-medium">+91 87359 75757</div>
+            </div>
+          </a>
           
           {/* WhatsApp */}
-          <Card className="overflow-hidden border-none shadow-md bg-white/90">
-            <CardContent className="p-4 flex flex-col items-center">
-              <div className="w-10 h-10 rounded-full bg-ksdesign-dark/10 flex items-center justify-center mb-2">
-                <MessageCircle size={20} className="text-ksdesign-dark" />
-              </div>
-              <h3 className="text-md font-semibold mb-2 text-ksdesign-dark">WhatsApp</h3>
-              <a 
-                href="https://wa.me/918735975757" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-3 py-1 rounded-lg bg-ksdesign-dark text-white font-medium hover:bg-ksdesign-dark/90 transition-colors duration-300"
-              >
-                Chat Now
-              </a>
-            </CardContent>
-          </Card>
+          <a 
+            href="https://wa.me/918735975757" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white rounded-lg shadow-md p-4 flex items-center gap-4 hover:shadow-lg transition-shadow"
+          >
+            <div className="w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center">
+              <MessageSquare size={20} className="text-yellow-500" />
+            </div>
+            <div className="flex-1">
+              <div className="text-sm text-gray-500">WhatsApp</div>
+              <div className="font-medium">Chat with us</div>
+            </div>
+          </a>
           
           {/* Instagram */}
-          <Card className="overflow-hidden border-none shadow-md bg-white/90">
-            <CardContent className="p-4 flex flex-col items-center">
-              <div className="w-10 h-10 rounded-full bg-ksdesign-dark/10 flex items-center justify-center mb-2">
-                <Instagram size={20} className="text-ksdesign-dark" />
-              </div>
-              <h3 className="text-md font-semibold mb-2 text-ksdesign-dark">Instagram</h3>
-              <a 
-                href="https://www.instagram.com/ksdesign_ahmedabad/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-3 py-1 rounded-lg bg-ksdesign-dark text-white font-medium hover:bg-ksdesign-dark/90 transition-colors duration-300"
-              >
-                @ksdesign_ahmedabad
-              </a>
-            </CardContent>
-          </Card>
+          <a 
+            href="https://www.instagram.com/ksdesign_ahmedabad/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white rounded-lg shadow-md p-4 flex items-center gap-4 hover:shadow-lg transition-shadow"
+          >
+            <div className="w-10 h-10 rounded-full bg-yellow-50 flex items-center justify-center">
+              <Instagram size={20} className="text-yellow-500" />
+            </div>
+            <div className="flex-1">
+              <div className="text-sm text-gray-500">Instagram</div>
+              <div className="font-medium">@ksdesign_ahmedabad</div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
